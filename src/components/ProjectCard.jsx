@@ -1,6 +1,7 @@
 const ProjectCard = ({ title, description, tech, link }) => {
   return (
-    <div className="border rounded-lg p-6 bg-white hover:shadow-md transition">
+    <div className="border rounded-lg p-6 bg-white transition
+                hover:shadow-xl hover:-translate-y-1">
       <h4 className="text-xl font-semibold text-gray-900 mb-3">
         {title}
       </h4>
@@ -18,7 +19,7 @@ const ProjectCard = ({ title, description, tech, link }) => {
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="text-blue-600 font-medium hover:underline"
+          className="text-blue-600 font-medium transition hover:text-blue-800"
         >
           View Project →
         </a>
