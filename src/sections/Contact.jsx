@@ -1,3 +1,5 @@
+import { SOCIAL_LINKS } from "../config/socials";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-20">
@@ -13,14 +15,14 @@ const Contact = () => {
 
         <div className="flex flex-col md:flex-row justify-center gap-6">
           <a
-            href="mailto:jaykumarbamania75@gmail.com"
+            href={`mailto:${SOCIAL_LINKS.email}`}
             className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800"
           >
             Email Me
           </a>
 
           <a
-            href="https://www.linkedin.com/in/jaykumarbamania"
+            href={SOCIAL_LINKS.linkedin}
             target="_blank"
             rel="noreferrer"
             className="border border-gray-900 px-6 py-3 rounded hover:bg-gray-100"
@@ -29,7 +31,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://github.com/jaykumarbamania"
+            href={SOCIAL_LINKS.github}
             target="_blank"
             rel="noreferrer"
             className="border border-gray-900 px-6 py-3 rounded hover:bg-gray-100"

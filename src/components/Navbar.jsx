@@ -1,3 +1,5 @@
+import { SOCIAL_LINKS } from "../config/socials";
+
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-white border-b">
