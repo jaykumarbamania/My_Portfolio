@@ -30,11 +30,11 @@ const Experience = () => {
           Experience
         </h3>
 
-        <div className="space-y-10">
+        <div className="space-y-8">
           {experiences.map((exp) => (
             <div
               key={exp.company}
-              className="bg-white border rounded-lg p-6"
+              className="bg-white border rounded-lg p-6 transition hover:shadow-md"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
                 <div>

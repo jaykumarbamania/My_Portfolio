@@ -19,7 +19,8 @@ const Skills = () => {
           {Object.entries(skills).map(([category, items]) => (
             <div
               key={category}
-              className="bg-white border rounded-lg p-6"
+              className="bg-white border rounded-lg p-6 transition
+                    hover:shadow-lg hover:-translate-y-1"
             >
               <h4 className="text-lg font-semibold text-gray-900 mb-4">
                 {category}
@@ -27,7 +28,8 @@ const Skills = () => {
 
               <ul className="space-y-2 text-gray-700">
                 {items.map((skill) => (
-                  <li key={skill}>• {skill}</li>
+                  <li className="inline-block bg-gray-100 px-3 py-1 rounded mr-2 mb-2"
+                      key={skill}>• {skill}</li>
                 ))}
               </ul>
             </div>
