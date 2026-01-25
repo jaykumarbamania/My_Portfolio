@@ -2,7 +2,7 @@ import { SOCIAL_LINKS } from "../config/socials";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 ">
+    <section id="contact" className="py-14 ">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h3 className="text-3xl font-bold text-gray-900 mb-6">
           Contact
