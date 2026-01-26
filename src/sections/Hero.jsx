@@ -30,8 +30,16 @@ const Hero = () => {
       <div className="mt-8 flex gap-4">
         <a
           href="#projects"
-          className="bg-black text-white px-6 py-3 rounded transition
-                    hover:bg-gray-800 hover:-translate-y-0.5"
+          className="
+              inline-flex items-center justify-center
+              px-6 py-3 rounded-xl
+              border border-gray-300
+              bg-white text-gray-900 font-medium
+              shadow-sm
+              transition-all duration-300
+              hover:-translate-y-0.5 hover:shadow-lg
+              hover:bg-gray-50
+            "
         >
           View Projects
         </a>
@@ -40,9 +48,14 @@ const Hero = () => {
           href={`/${MY_RESUME_NAME}`}
           download
           className="
-            inline-block bg-black text-white px-6 py-3 rounded
-            transition hover:bg-gray-800 hover:-translate-y-0.5
-          "
+              inline-flex items-center justify-center
+              px-6 py-3 rounded-xl
+              bg-black text-white font-medium
+              shadow-md
+              transition-all duration-300
+              hover:-translate-y-0.5 hover:shadow-xl
+              focus:outline-none focus:ring-2 focus:ring-black/30
+            "
           >
           Download Resume
           </a>

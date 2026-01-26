@@ -1,64 +1,25 @@
-const experiences = [
-  {
-    company: "Barclays",
-    location: "Pune, India",
-    roles: [
-      {
-        title: "Senior Software Engineer",
-        duration: "Nov 2025 – Present",
-        points: [
-          "Working on enterprise-scale distributed systems and platform modernization.",
-          "Contributing to backend system design and technical decision-making.",
-        ],
-        currentRole: true,
-      },
-      {
-        title: "BA3 Developer",
-        duration: "Mar 2022 – Nov 2025",
-        points: [
-          "Designed and built high-performance backend services using Java and Spring Boot.",
-          "Worked on microservices-based enterprise applications across multiple environments.",
-          "Performed OpenShift and Kubernetes upgrades to improve stability and performance.",
-          "Integrated security and compliance tools to strengthen application security.",
-          "Delivered partner commitments ahead of schedule, contributing to business growth.",
-        ],
-        currentRole: false,
-      },
-    ],
-  },
-  {
-    company: "NeoSoft Technologies",
-    location: "Ahmedabad, India",
-    roles: [
-      {
-        title: "Junior Software Engineer",
-        duration: "Aug 2021 – Aug 2022",
-        points: [
-          "Developed Java-based enterprise applications with secure authentication.",
-          "Optimized backend performance using Java Streams and efficient database queries.",
-          "Supported QA, integration testing, and production issue resolution.",
-        ],
-        currentRole: false,
-      },
-    ],
-  },
-];
+import { experiences } from "../config/experience";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-gray-50 py-14 ">
+    <section
+      id="experience"
+      className="py-20 bg-gray-50 border-t border-gray-100"
+    >
       <div className="max-w-6xl mx-auto px-4">
-        <h3 className="text-3xl font-bold text-gray-900 mb-12">
+        {/* Section Header */}
+        <h3 className="text-3xl font-bold text-gray-900">
           Experience
         </h3>
+        <div className="mt-2 h-1 w-12 bg-black rounded-full mb-14" />
 
         {/* Timeline */}
         <div className="relative border-l border-gray-300 ml-4">
           {experiences.map((company, companyIndex) => (
-            <div key={companyIndex} className="mb-16">
+            <div key={companyIndex} className="mb-20">
               {/* Company Header */}
               <div className="relative pl-10 mb-10">
-                <span className="absolute left-0 top-2 -translate-x-1/2 w-4 h-4 bg-black rounded-full"></span>
+                <span className="absolute left-0 top-2 -translate-x-1/2 w-4 h-4 bg-black rounded-full" />
                 <h4 className="text-xl font-semibold text-gray-900">
                   {company.company}
                 </h4>
@@ -68,31 +29,34 @@ const Experience = () => {
               </div>
 
               {/* Roles */}
-              <div className="space-y-8">
+              <div className="space-y-10">
                 {company.roles.map((role, roleIndex) => (
-                  <div key={roleIndex} className="relative pl-10">
+                  <div
+                    key={roleIndex}
+                    className="relative pl-10 group"
+                  >
                     {/* Role Dot */}
                     <span
-                      className={`absolute left-0 top-6 -translate-x-1/2 w-3 h-3 rounded-full
+                      className={`absolute left-0 top-6 -translate-x-1/2 w-3 h-3 rounded-full transition-all duration-300
                         ${
                           role.currentRole
                             ? "bg-black scale-125"
-                            : "bg-gray-400"
+                            : "bg-gray-400 group-hover:bg-black group-hover:scale-110"
                         }
                       `}
-                    ></span>
+                    />
 
                     {/* Role Card */}
                     <div
-                      className={`max-w-5xl border rounded-lg p-6 transition hover:shadow-md
+                      className={`max-w-5xl rounded-xl p-6 transition-all duration-300
                         ${
                           role.currentRole
-                            ? "bg-black text-white"
-                            : "bg-white text-gray-900"
+                            ? "bg-black text-white shadow-xl hover:shadow-2xl hover:scale-[1.01]"
+                            : "bg-white border border-gray-200 shadow-sm hover:-translate-y-1 hover:shadow-lg hover:border-gray-400"
                         }
                       `}
                     >
-                      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-3">
+                      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
                         <h5
                           className={`text-lg font-semibold ${
                             role.currentRole
@@ -114,14 +78,22 @@ const Experience = () => {
                       </div>
 
                       <ul
-                        className={`list-disc list-inside space-y-2 ${
+                        className={`space-y-2 pl-5 ${
                           role.currentRole
                             ? "text-gray-200"
                             : "text-gray-700"
                         }`}
                       >
                         {role.points.map((point, idx) => (
-                          <li key={idx}>{point}</li>
+                          <li   className="relative pl-4"
+                                key={idx}>  
+                            <span className= {`absolute left-0 top-2 h-1.5 w-1.5 rounded-full ${
+                          role.currentRole
+                            ? "bg-gray-200"
+                            : "bg-gray-900"
+                        }`}></span>
+                                {point}
+                         </li>
                         ))}
                       </ul>
                     </div>
