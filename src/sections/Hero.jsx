@@ -1,3 +1,4 @@
+import { MY_RESUME_NAME } from "../config/socials";
 const Hero = () => {
   return (
     <section id="home" className="max-w-6xl mx-auto px-4 pt-24 pb-16 ">
@@ -36,12 +37,15 @@ const Hero = () => {
         </a>
 
         <a
-          href="/resume.pdf"
-          className="border border-gray-900 px-6 py-3 rounded transition
-                    hover:bg-gray-100 hover:-translate-y-0.5"
-        >
+          href={`/${MY_RESUME_NAME}`}
+          download
+          className="
+            inline-block bg-black text-white px-6 py-3 rounded
+            transition hover:bg-gray-800 hover:-translate-y-0.5
+          "
+          >
           Download Resume
-        </a>
+          </a>
       </div>
 
     </section>
