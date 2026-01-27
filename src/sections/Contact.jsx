@@ -1,4 +1,4 @@
-import { SOCIAL_LINKS } from "../config/socials";
+import { SOCIAL_LINKS, MY_RESUME_NAME } from "../config/socials";
 
 const Contact = () => {
   return (
@@ -14,6 +14,14 @@ const Contact = () => {
         </p>
 
         <div className="flex flex-col md:flex-row justify-center gap-6">
+          <a
+            href={`/${MY_RESUME_NAME}`}
+            download
+            className="border border-gray-300 px-5 py-2 rounded
+                        hover:border-gray-500 transition"
+            >
+            Download Resume
+          </a>
           <a
             href={`mailto:${SOCIAL_LINKS.email}`}
             className="bg-black text-white px-6 py-3 rounded transition

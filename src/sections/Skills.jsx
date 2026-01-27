@@ -9,7 +9,7 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-gray-50 py-12">
+    <section id="skills" className="bg-gray-50 pb-12 pt-20">
       <div className="max-w-6xl mx-auto px-4">
         <h3 className="text-3xl font-bold text-gray-900 mb-8">
           Skills
@@ -37,13 +37,17 @@ const Skills = () => {
                     <li
                     key={skill}
                     className="
-                        bg-gray-100 text-gray-700
-                        px-3 py-1 rounded-full
-                        transition hover:bg-gray-200
+                    inline-block
+                    bg-gray-100
+                    px-3 py-1 rounded-full
+                    text-sm
+                    transition
+                    hover:bg-black hover:text-white
                     "
                     >
                     {skill}
                     </li>
+
                 ))}
                 </ul>
             </div>
