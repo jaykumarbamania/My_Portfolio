@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Contact from "./sections/Contact";
+import EngineeringPhilosophy from "./sections/EngineeringPhilosophy";
 import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
@@ -11,6 +12,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <EngineeringPhilosophy />
       <Experience />
       <Projects />
       <Skills />
