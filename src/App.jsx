@@ -6,6 +6,7 @@ import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+import SystemDesign from "./sections/SystemDesign";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <EngineeringPhilosophy />
       <Experience />
+      <SystemDesign />
       <Projects />
       <Skills />
       <Contact />
