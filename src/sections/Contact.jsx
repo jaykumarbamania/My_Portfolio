@@ -1,4 +1,4 @@
-import { SOCIAL_LINKS, MY_RESUME_NAME } from "../config/socials";
+import { SOCIAL_LINKS, MY_RESUME_NAME } from "../data/socials";
 
 const Contact = () => {
   return (

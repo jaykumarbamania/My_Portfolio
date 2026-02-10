@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MY_PORTFOLIO_NAME } from "../config/socials";
+import { MY_PORTFOLIO_NAME } from "../data/socials";
 
 const navLinks = [
   { name: "Home", href: "#home" },
