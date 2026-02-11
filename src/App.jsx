@@ -43,10 +43,12 @@ const App = () => {
     <>
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/oms-case-study" element={<OMSCaseStudy />} />
-      </Routes>
+       <div className="pt-24">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/oms-case-study" element={<OMSCaseStudy />} />
+        </Routes>
+      </div>
     </>
   );
 };
