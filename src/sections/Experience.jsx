@@ -1,4 +1,4 @@
-import { experiences } from "../config/experience";
+import { experiences } from "../data/experience";
 
 const Experience = () => {
   return (

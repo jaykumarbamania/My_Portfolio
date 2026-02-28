@@ -1,4 +1,4 @@
-import { MY_RESUME_NAME } from "../config/socials";
+import { MY_RESUME_NAME } from "../data/socials";
 const Hero = () => {
   return (
     <section id="home" className="max-w-6xl mx-auto px-4 pt-24 pb-16 ">
