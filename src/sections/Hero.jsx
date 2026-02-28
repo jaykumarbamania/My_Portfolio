@@ -1,4 +1,4 @@
-import { MY_RESUME_NAME } from "../config/socials";
+import { MY_RESUME_NAME } from "../data/socials";
 const Hero = () => {
   return (
     <section id="home" className="max-w-6xl mx-auto px-4 pt-24 pb-16 ">
@@ -10,22 +10,6 @@ const Hero = () => {
         Full-stack engineer with 5+ years of experience building scalable
         applications using Java, Spring Boot, React, and AWS.
       </p>
-
-      {/* <div className="mt-8 flex gap-4">
-        <a
-          href="#projects"
-          className="bg-black text-white px-6 py-3 rounded hover:bg-gray-800"
-        >
-          View Projects
-        </a>
-
-        <a
-          href="/resume.pdf"
-          className="border border-gray-900 px-6 py-3 rounded hover:bg-gray-100"
-        >
-          Download Resume
-        </a>
-      </div> */}
 
       <div className="mt-8 flex gap-4">
         <a
@@ -60,8 +44,8 @@ const Hero = () => {
           Download Resume
           </a>
       </div>
-
     </section>
+    
   );
 };
 

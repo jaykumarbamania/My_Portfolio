@@ -1,4 +1,4 @@
-import { SOCIAL_LINKS, MY_PORTFOLIO_NAME } from "../config/socials";
+import { SOCIAL_LINKS, MY_PORTFOLIO_NAME } from "../data/socials";
 
 const Footer = () => {
   return (
